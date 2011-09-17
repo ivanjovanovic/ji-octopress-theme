@@ -1,1 +1,65 @@
-@import "boilerplate2"
+@import "boilerplate2";
+@import "colors";
+
+body {
+  background-color: $base03;
+}
+
+::-moz-selection { background: $magenta; text-shadow: none; }
+::selection { background: $magenta; text-shadow: none; }
+
+
+#container {
+  margin-top: 70px;
+  width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Inconsolata";
+
+  #post & {
+    margin-top: 30px;
+  }
+}
+
+header {
+  h1 {
+
+    font-size: 36px;
+
+    #post & {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
+    a {
+      text-decoration: none;
+      color: $green;
+    }
+
+    a:visited {
+      color: $green;
+    }
+      color: $green;
+  }
+
+  h2 {
+    font-size: 14px;
+    color: $orange;
+  }
+}
+
+article {
+  h1 {
+    color: $blue;
+    font-size: 24px;
+  }
+
+  color: $base0;
+  line-height: 24px;
+  font-size: 14px;
+
+  .article-signature { 
+    float: right;
+    color: $violet;
+  }
+}

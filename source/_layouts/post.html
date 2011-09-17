@@ -1,13 +1,11 @@
 {% include head.html %}
-<body>
+<body id="post">
 
   <div id="container">
     {% include header.html %}
-    <div id="main" role="main">
-      {{ content | excerpt }}
-    </div>
+    {% include article.html %}
     {% include footer.html %}
-  </div> <!--! end of #container -->
+  </div>
 
   {% include bottom_scripts.html %}
 </body>
