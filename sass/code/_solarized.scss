@@ -6,14 +6,14 @@ $base0:           #839496 !default; //medium gray
 $base1:           #93a1a1 !default; //medium light gray
 $base2:           #eee8d5 !default; //cream
 $base3:           #fdf6e3 !default; //white
-$yellow:          #b58900 !default;
-$orange:          #cb4b16 !default;
-$red:             #dc322f !default;
-$magenta:         #d33682 !default;
-$violet:          #6c71c4 !default;
-$blue:            #268bd2 !default;
-$cyan:            #2aa198 !default;
-$green:           #859900 !default;
+$solar-yellow:    #b58900 !default;
+$solar-orange:    #cb4b16 !default;
+$solar-red:       #dc322f !default;
+$solar-magenta:   #d33682 !default;
+$solar-violet:    #6c71c4 !default;
+$solar-blue:      #268bd2 !default;
+$solar-cyan:      #2aa198 !default;
+$solar-green:     #859900 !default;
 
 $solarized: dark !default;
 
@@ -32,6 +32,3 @@ $solarized: dark !default;
 $pre-bg: $base03 !default;
 $pre-border: $base02 !default;
 $pre-color: $base1 !default;
-
-// custom definitions
-$link-color: $blue

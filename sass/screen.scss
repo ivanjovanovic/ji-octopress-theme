@@ -1,5 +1,7 @@
 @import "boilerplate2";
 @import "colors";
+@import "typography";
+@import "code";
 
 body {
   background-color: $base03;
@@ -14,7 +16,7 @@ body {
   width: 760px;
   margin-left: auto;
   margin-right: auto;
-  font-family: "Inconsolata";
+  font-family: 'Helvetica Neue';
 
   #post & {
     margin-top: 30px;
@@ -49,17 +51,28 @@ header {
 }
 
 article {
-  h1 {
-    color: $blue;
-    font-size: 24px;
-  }
-
   color: $base0;
   line-height: 24px;
   font-size: 14px;
 
+  a, & a:visited, & a:hover {
+    text-decoration: none;
+    color: $blue;
+  }
+
+  h1, & h2, & h3 {
+    color: $yellow;
+  }
+
+  h1 { font-size: 24px; }
+  h2 { font-size: 20px; }
+
   .article-signature { 
     float: right;
     color: $violet;
+  }
+
+  .article-content {
+    font-family: Verdana, "Times New Roman";
   }
 }
