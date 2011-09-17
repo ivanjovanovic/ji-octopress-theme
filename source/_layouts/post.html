@@ -2,17 +2,14 @@
 <body>
 
   <div id="container">
-    <header>
-
-    </header>
+    {% include header.html %}
     <div id="main" role="main">
-
+      {{ content | excerpt }}
     </div>
-    <footer>
-
-    </footer>
+    {% include footer.html %}
   </div> <!--! end of #container -->
 
   {% include bottom_scripts.html %}
 </body>
 </html>
+
