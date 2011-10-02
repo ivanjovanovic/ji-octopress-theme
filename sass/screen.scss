@@ -10,6 +10,31 @@ body {
 ::-moz-selection { background: $magenta; text-shadow: none; }
 ::selection { background: $magenta; text-shadow: none; }
 
+#main {
+  h1 {
+
+    font-size: 30px;
+    color: $yellow;
+  }
+
+  #personal {
+    margin-bottom: 50px;
+    margin-top: 50px;
+
+    ul {
+      list-style-type: none;
+      
+      li {
+        margin: 10px 0;
+      }
+    }
+  }
+
+  .social {
+    float:left;
+    width: 50%;
+  }
+}
 
 #container {
   margin-top: 70px;
@@ -25,6 +50,10 @@ body {
   strong {
     color: $solar-green;
   }
+
+  div.image {
+    float: left;
+  }
 }
 
 header {
@@ -39,13 +68,13 @@ header {
 
     a {
       text-decoration: none;
-      color: $green;
+      color: $blue;
     }
 
     a:visited {
-      color: $green;
+      color: $blue;
     }
-      color: $green;
+      color: $blue;
   }
 
   h2 {
