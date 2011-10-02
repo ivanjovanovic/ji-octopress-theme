@@ -11,9 +11,26 @@ body {
 ::selection { background: $magenta; text-shadow: none; }
 
 #main {
+
+  color: $green;
+  font-size: 14px;
+
+  a, & a:visited, & a:hover {
+    text-decoration: none;
+    color: $blue;
+  }
+
+
   h1 {
 
     font-size: 30px;
+    color: $yellow;
+  }
+
+  h3 {
+    font-size: 18px;
+    margin-top: 25px;
+    margin-bottom: 5px;
     color: $yellow;
   }
 
