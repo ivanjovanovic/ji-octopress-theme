@@ -1,13 +1,16 @@
 <article>
-  <h1 class="article-title">{{ page.title | titlecase }}</h1>
 
 {% if index %}
-  <div class="article-content">{{ content | excerpt }}</div>
   <div class="article-read-more">
-    <a rel="full-article" href="{{ root_url }}{{ post.url }}">Read on &rarr;</a>
+    <p class="meta">
+      {% include post/date.html %}{{ time }}
+      <a rel="full-article" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+    </p>
   </div>
 {% else %}
+  <h1 class="article-title">{{ page.title | titlecase }}</h1>
   <div class="article-content">{{ content }}</div>
-  <span class="article-signature">by {{ site.author }}</span>
+  {% include post/sharing.html %}
 {% endif %}
 </article>
+
