@@ -35,7 +35,7 @@ body {
   }
 
   #personal {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     margin-top: 50px;
 
     ul {
@@ -50,12 +50,20 @@ body {
   .social {
     float:left;
     width: 50%;
+    padding: 0;
   }
+
+  .toolbox {
+    float: left;
+    width: 50%;
+    padding: 0;
+  }
+
 }
 
 #container {
   margin-top: 70px;
-  width: 760px;
+  width: 700px;
   margin-left: auto;
   margin-right: auto;
   font-family: 'Helvetica Neue';
@@ -74,8 +82,10 @@ body {
 }
 
 header {
-  h1 {
+  a {
 
+    text-decoration: none;
+    color: $blue;
     font-size: 36px;
 
     #post & {
@@ -83,12 +93,7 @@ header {
       margin-bottom: 30px;
     }
 
-    a {
-      text-decoration: none;
-      color: $blue;
-    }
-
-    a:visited {
+    &:visited {
       color: $blue;
     }
       color: $blue;
@@ -134,4 +139,25 @@ article {
   .article-content {
     font-family: Verdana, "Times New Roman";
   }
+
+  p {
+    margin-top: 5px;
+  }
+}
+
+#main nav[role=pagination] {
+  a {
+    margin-right: 15px;
+    background-color: $magenta;
+    padding: 3px;
+
+    &, &:visited, &:hover {
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+}
+
+.sharing {
+  margin-top: 20px;
 }

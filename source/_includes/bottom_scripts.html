@@ -10,12 +10,6 @@
   <!-- end scripts-->
 
 	
-  <script>
-    window._gaq = [['_setAccount','{{ site.google_analytics_tracking_id }}'],['_trackPageview'],['_trackPageLoadTime']];
-    Modernizr.load({
-      load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
-    });
-  </script>
 
   <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
        chromium.org/developers/how-tos/chrome-frame-getting-started -->
@@ -25,3 +19,5 @@
   <![endif]-->
  
 {% include twitter_sharing.html %}
+{% include google_plus_one.html %}
+{% include google_analytics.html %}
