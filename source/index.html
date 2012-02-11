@@ -1,7 +1,6 @@
 ---
 layout: home
 ---
-<h1>Ivan Jovanovic in search for the next abstraction</h1>
 {% include about_me.html %}
 <h3>Posts</h3>
 {% assign index = true %}
@@ -16,7 +15,7 @@ layout: home
     {% if paginator.next_page %}
       <a class="prev" href="{{ site.url }}{{paginator.next_page}}">&larr; Older</a>
     {% endif %}
-    <a href="{{ site.url }}/blog/archives">Blog Archives</a>
+    <a href="{{ site.url }}/archives">Blog Archives</a>
     {% if paginator.previous_page %}
     <a class="next" href="{{ site.url }}{{paginator.previous_page}}">Newer &rarr;</a>
     {% endif %}

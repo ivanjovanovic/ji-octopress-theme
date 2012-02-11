@@ -7,6 +7,13 @@ body {
   background-color: $base03;
 }
 
+header {
+  h1 {
+    color: #B58900;
+    margin-left: 60px;
+  }
+}
+
 ::-moz-selection { background: $magenta; text-shadow: none; }
 ::selection { background: $magenta; text-shadow: none; }
 
@@ -14,6 +21,7 @@ body {
 
   color: $green;
   font-size: 14px;
+  padding-left: 25px;
 
   a, & a:visited, & a:hover {
     text-decoration: none;
@@ -66,7 +74,7 @@ body {
   width: 700px;
   margin-left: auto;
   margin-right: auto;
-  font-family: 'Helvetica Neue';
+  font: 16px 'Inconsolata';
 
   #post & {
     margin-top: 30px;
@@ -78,6 +86,10 @@ body {
 
   div.image {
     float: left;
+  }
+
+  nav {
+    margin-top: 10px;
   }
 }
 
@@ -107,8 +119,12 @@ header {
 
 article {
   color: $base0;
-  line-height: 24px;
-  font-size: 14px;
+  line-height: 18px;
+  font-size: 15px;
+
+  p {
+    margin-top: 0px; 
+  }
 
   a, & a:visited, & a:hover {
     text-decoration: none;
@@ -124,6 +140,7 @@ article {
     font-size: 16px;
     margin-top: 25px;
     margin-bottom: 5px;
+    letter-spacing: 1px;
   }
   h3 {
     font-size: 14px;
@@ -131,18 +148,34 @@ article {
     margin-bottom: 5px;
   }
 
+  h4 {
+    color: $solar-red;
+    font-size: 14px;
+    margin: 0;
+    font-weight: normal;
+  }
+
   .article-signature { 
     float: right;
     color: $violet;
   }
 
-  .article-content {
-    font-family: Verdana, "Times New Roman";
+  strong {
+    font-weight: normal;
   }
 
-  p {
-    margin-top: 5px;
+  .article-read-more {
+    font-size: 14px;
+    line-height: 20px;
   }
+  .article-read-more time {
+    display: block;
+    float: left;
+    width: 100px;
+    text-align: right;
+    margin-right: 10px;
+  }
+
 }
 
 #main nav[role=pagination] {
