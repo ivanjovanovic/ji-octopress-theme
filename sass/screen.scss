@@ -167,6 +167,10 @@ article {
   .article-read-more {
     font-size: 14px;
     line-height: 20px;
+
+    p {
+      margin: 0px;
+    }
   }
   .article-read-more time {
     display: block;
