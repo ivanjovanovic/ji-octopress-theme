@@ -48,7 +48,7 @@ header {
 
     ul {
       list-style-type: none;
-      
+
       li {
         margin: 10px 0;
       }
@@ -123,7 +123,7 @@ article {
   font-size: 15px;
 
   p {
-    margin-top: 0px; 
+    margin-top: 0px;
   }
 
   a, & a:visited, & a:hover {
@@ -136,7 +136,7 @@ article {
   }
 
   h1 { font-size: 24px; }
-  h2 { 
+  h2 {
     font-size: 16px;
     margin-top: 25px;
     margin-bottom: 5px;
@@ -155,7 +155,7 @@ article {
     font-weight: normal;
   }
 
-  .article-signature { 
+  .article-signature {
     float: right;
     color: $violet;
   }
@@ -179,7 +179,6 @@ article {
     text-align: right;
     margin-right: 10px;
   }
-
 }
 
 #main nav[role=pagination] {
